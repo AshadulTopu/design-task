@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fanatech Interview </title>
+
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- tailwind css link  -->
+    <link rel="stylesheet" href="dist/output.css">
+    <!-- font awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- custom css link  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- header section  -->
+    <header class="   bg-[#F0F4EC] border-b">
+        <div class="header-inner max-w-[1440px] p-4 mx-auto container flex items-center justify-between overflow-hidden">
+
+            <div class="small-menu sm:w-1/3 w-1/5 lg:hidden block">
+                <i class="fa-solid fa-bars cursor-pointer"></i>
+            </div>
+            <div class="site-title sm:w-1/3 w-3/5">
+                <h2 class="text-3xl font-bold text-green-700">FoodTime <i class="fa-regular fa-clock text-base -mt-3 text-orange-500"></i></h2> 
+            </div>
+            <nav class="w-1/3 lg:block hidden">
+                <ul class="flex items-center justify-between">
+                    <li><a href="#" class="text-sm font-medium hover:text-slate-600">Home</a></li>
+                    <li><a href="#" class="text-sm font-medium hover:text-slate-600">Blog</a></li>
+                    <li><a href="#" class="text-sm font-medium hover:text-slate-600">About us</a></li>
+                    <li><a href="#" class="text-sm font-medium hover:text-slate-600">EN <i class="fa-solid fa-angle-down"></i></a></li>
+                </ul>
+            </nav>
+            <div class="user sm:w-1/3 w-1/5 flex items-center justify-end gap-5 px-5">
+                <button class="login py-2 px-6 bg-[#396C03] rounded-full text-white capitalize hidden sm:block">login</button>
+                <div class="cart bg-[#396C03] rounded-full px-3 py-2 text-white relative">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p class="absolute -top-2 -right-1 px-1 bg-orange-600 text-white rounded-full">2</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- hero section  -->
+    <section class="hero lg:bg-leaf1 bg-[#F0F4EC] overflow-hidden">
+        <div class="max-w-[1440px] md:py-40 py-16 px-4 mx-auto container flex flex-wrap items-center justify-between lg:bg-leaf2">
+            <div class="lg:w-1/2 w-full ">
+                <div class="mx-4 lg:text-left text-center">
+                    <h1 class="sm:text-5xl text-3xl text-green-800 font-semibold sm:leading-[72px]">
+                        Order food online <br class="hidden lg:block"> from your favorite <br class="hidden lg:block"> local restaurants.
+                    </h1>
+                    <p class="text-slate-500 sm:text-xl font-semibold py-2">Freshly made food delivered to your door.</p>
+
+                    <div class=" relative">
+                        <input type="text" placeholder="Enter your location" class="search-input sm:px-6 sm:py-3 px-3 py-2 rounded-full sm:w-3/5 w-4/5 border-2 border-green-300 outline-none" >
+
+                        <button class=" absolute top-[2px] xl:right-56 lg:right-40 sm:right-32 right-10 sm:px-6 sm:py-3 px-2 py-2 bg-[#396C03] text-white rounded-full 
+                        hover:bg-[#FF8B00] ">
+                            <i class="fa-solid fa-magnifying-glass sm:px-3 px-1"></i> Search
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:w-1/2 w-full lg:mt-0 mt-28 bounce ">
+                <div class=" relative lg:mx-4 left-1/2 md:-translate-x-[35%] -translate-x-[25%] ">
+                    <div class=" absolute -top-16 sm:left-48 left-24 sm:w-52 w-42 bg-white p-5 rounded bg-opacity-50">
+                        <h2 class="text-orange-500 sm:text-4xl text-2xl font-serif font-semibold flex gap-3">
+                            <svg class="sm:w-full w-8" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6673 3.63721C12.2755 3.50881 13.8022 2.87628 15.0299 1.82968C16.4166 0.648639 18.1785 0 20 0C21.8215 0 23.5834 0.648639 24.9701 1.82968C26.1978 2.87628 27.7245 3.50881 29.3327 3.63721C31.1488 3.78236 32.8538 4.56964 34.1421 5.85792C35.4304 7.14619 36.2176 8.85123 36.3628 10.6673C36.4903 12.2749 37.1228 13.8024 38.1703 15.0299C39.3514 16.4166 40 18.1785 40 20C40 21.8215 39.3514 23.5834 38.1703 24.9701C37.1237 26.1978 36.4912 27.7245 36.3628 29.3327C36.2176 31.1488 35.4304 32.8538 34.1421 34.1421C32.8538 35.4304 31.1488 36.2176 29.3327 36.3628C27.7245 36.4912 26.1978 37.1237 24.9701 38.1703C23.5834 39.3514 21.8215 40 20 40C18.1785 40 16.4166 39.3514 15.0299 38.1703C13.8022 37.1237 12.2755 36.4912 10.6673 36.3628C8.85123 36.2176 7.14619 35.4304 5.85792 34.1421C4.56964 32.8538 3.78236 31.1488 3.63721 29.3327C3.50881 27.7245 2.87628 26.1978 1.82968 24.9701C0.648639 23.5834 0 21.8215 0 20C0 18.1785 0.648639 16.4166 1.82968 15.0299C2.87628 13.8022 3.50881 12.2755 3.63721 10.6673C3.78236 8.85123 4.56964 7.14619 5.85792 5.85792C7.14619 4.56964 8.85123 3.78236 10.6673 3.63721ZM29.2677 16.7674C29.7231 16.2959 29.9751 15.6644 29.9694 15.0089C29.9637 14.3534 29.7007 13.7264 29.2372 13.2628C28.7737 12.7993 28.1466 12.5364 27.4911 12.5307C26.8356 12.525 26.2041 12.777 25.7326 13.2324L17.5 21.465L14.2674 18.2325C13.7959 17.7771 13.1644 17.5251 12.5089 17.5308C11.8534 17.5365 11.2263 17.7994 10.7628 18.2629C10.2993 18.7265 10.0363 19.3535 10.0306 20.009C10.0249 20.6645 10.2769 21.296 10.7323 21.7675L15.7324 26.7676C16.2013 27.2363 16.837 27.4996 17.5 27.4996C18.1629 27.4996 18.7987 27.2363 19.2675 26.7676L29.2677 16.7674Z" fill="#FF8B00"/>
+                            </svg>
+                            
+                            200k+</h2>
+                            <p class="text-center text-slate-500 font-medium">People Delivered</p>
+                    </div>
+                    <div class=" absolute lg:-left-28 md:-left-20 sm:-left-28 -left-24  -top-6 z-0 ">
+                        <img src="./assets/img/NicePng_plate-of-food-png_546030 1.png" class="sm:w-full w-4/5" alt="">
+                    </div>
+                    <div class="md:w-full w-2/3 z-50 ">
+                        <img src="./assets/img/image 1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Explore more  -->
+
+    <section class="explore bg-yellow-50 overflow-hidden">
+        <div class="max-w-[1440px] py-32 mx-auto px-4 container flex items-center justify-between flex-wrap">
+            <div class="lg:w-1/2 w-full">
+                <h2 class="text-4xl leading-[56px] text-[#396C03] font-semibold">Explore your <br> favourite city’s food.
+                </h2>
+                <p class="text-base text-slate-500 py-5 pr-10">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci incidunt maiores veritatis aspernatur quod quasi nihil eum consectetur architecto impedit animi perferendis reiciendis ipsum ratione recusandae sit vero modi, inventore soluta, nemo dolorum omnis, qui 
+
+                </p>
+                <button class="py-3 px-7 bg-[#396C03] text-white rounded-full hover:bg-[#FF8B00]">Explore <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div class="lg:w-1/2 w-full relative lg:mt-0 mt-10">
+                <div class="bg-img w-full">
+                    <img src="assets/img/image 2.png" class="w-full" alt="">
+                </div>
+                <div class="cicle  absolute lg:top-0 md:top-1/4 top-0 -translate-y-[50%] roll-in">
+                    <img src="assets/img/too-much-orders-contacless-delivery-service-during-quarantine-man-delivers-food-during-isolation-wearing-helmet-face-mask-taking-food-bike-isolated-white-wall-safety-hurrying-up copy 1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

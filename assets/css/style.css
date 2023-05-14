@@ -1,0 +1,53 @@
+
+h1,h2,h3,h4{
+    font-family: 'Merienda', cursive;
+}
+.search-input::before {
+    contain: '';
+    width: 50px;
+    background: #FF8B00;
+    ;
+}
+.bg-leaf1{
+    background-image: url('../img/—Pngtree—hand-painted\ noise\ green\ leaf\ element_4054582\ 1.png');
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+.bg-leaf2{
+    background-image: url('../img/—Pngtree—hand-painted\ noise\ green\ leaf\ element_4054582\ 1.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.bounce {
+    animation: bounce2 2s ease infinite;
+  }
+  @keyframes bounce2 {
+      0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+      40% {transform: translateY(-30px);}
+      60% {transform: translateY(-15px);}
+  }
+
+
+.roll-in {
+  animation: roll-in 2s ease infinite;
+}
+@keyframes roll-in {
+  0% {
+    transform: translateX(-30%);
+  }
+  100% {
+    transform: translateX(40%);
+  }
+}
+
+@media (max-width:640px){
+    @keyframes roll-in {
+        0% {
+          transform: translateX(-30%);
+        }
+        100% {
+          transform: translateX(20%);
+        }
+      }
+}
